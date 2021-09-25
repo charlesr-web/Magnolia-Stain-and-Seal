@@ -1,0 +1,23 @@
+{
+  "name": "magnolia-stain",
+  "version": "1.0.0",
+  "description": "landing page for magnolia stain and seal",
+  "main": "index.html",
+  "scripts": {
+    "lite": "lite-server",
+    "scss": "sass --update css/:css/",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Charles Rayner",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "sass": "^1.42.1"
+  }
+}
