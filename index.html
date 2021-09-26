@@ -85,33 +85,90 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/f01921c13b.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Magnolia Stain & Seal</title>
   </head>
   <body>
-    <!-- Nav -->
-    <div class="container container-fluid"></div>
-
     <!-- Header -->
-    <div class="container container-fluid"></div>
+    <header class="container-fluid sticky-top">
+      <div class="row">
+        <div class="col" id="logo">
+          <a href="index.html"><img src="img/small_logo.png" alt="logo" /></a>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+          <button
+            class="navbar-toggler order-2 order-lg-1"
+            type="button"
+            data-toggle="collapse"
+            data-target="#menu"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="menu">
+            <ul class="navbar-nav mr-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <a href="tel:662-372-0848">
+            <button
+              class="btn btn-warning my-2 my-sm-0 order-1 order-lg-2"
+              type="button"
+            >
+              <i class="fas fa-phone-alt"></i>
+              Call
+            </button>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <div class="container-fluid"></div>
 
     <!-- About Us -->
-    <div class="container container-fluid"></div>
+    <section class="container-fluid"></section>
 
     <!-- Services -->
-    <div class="container container-fluid"></div>
+    <section class="container-fluid"></section>
 
     <!-- Gallery -->
-    <div class="container container-fluid"></div>
+    <section class="container-fluid"></section>
 
     <!-- Contact Us -->
-    <div class="container container-fluid"></div>
+    <section class="container-fluid"></section>
 
     <!-- Business Hours -->
-    <div class="container container-fluid"></div>
+    <section class="container-fluid"></section>
 
     <!-- Footer -->
-    <div class="container container-fluid"></div>
+    <footer class="container-fluid"></footer>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>

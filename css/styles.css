@@ -1,3 +1,10 @@
+.test {
+  border: solid 2px red;
+}
 
+body {
+  font-family: 'Catamaran', sans-serif;
+  color: #ffffff;
+}
 
 /*# sourceMappingURL=styles.css.map */

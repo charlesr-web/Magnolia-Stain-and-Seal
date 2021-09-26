@@ -5,8 +5,10 @@
   "main": "index.html",
   "scripts": {
     "lite": "lite-server",
+    "watch:scss": "onchange \"css/*.scss\" --npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
     "scss": "sass --update css/:css/",
-    "start": "npm run lite",
+    "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Charles Rayner",
@@ -14,9 +16,12 @@
   "dependencies": {
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "^3.0.1",
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
+    "font-awesome": "^4.7.0",
     "lite-server": "^2.6.1",
     "sass": "^1.42.1"
   }

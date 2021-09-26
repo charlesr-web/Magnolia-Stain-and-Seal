@@ -1,0 +1,18 @@
+$font-heading: 'Montserrat', sans-serif;
+$font-body: 'Catamaran', sans-serif;
+$color-gold: #fab405;
+$color-dark: #292826;
+$color-light: #ffffff;
+
+.test {
+  border: solid 2px red;
+}
+
+body {
+  font-family: $font-body;
+  color: $color-light;
+}
+
+// TODO:
+// have logo go on left, links and button on the right
+// have button come before menu on mobile
