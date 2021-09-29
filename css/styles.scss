@@ -2,6 +2,7 @@ $font-heading: 'Montserrat', sans-serif;
 $font-body: 'Catamaran', sans-serif;
 $color-gold: #fab405;
 $color-dark: #292826;
+$color-grey: #3b3a37;
 $color-light: #ffffff;
 
 .test {
@@ -11,8 +12,71 @@ $color-light: #ffffff;
 body {
   font-family: $font-body;
   color: $color-light;
+  line-height: 1.5;
+  background-color: $color-dark;
+  font-weight: 600;
 }
 
-// TODO:
-// have logo go on left, links and button on the right
-// have button come before menu on mobile
+.bg {
+  background-image: linear-gradient(
+      rgba(41, 40, 38, 0.5),
+      rgba(41, 40, 38, 0.5)
+    ),
+    url('../img/pexels-james-frid-1098764.jpg');
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+header {
+  #menu {
+    a {
+      letter-spacing: 0.8px;
+    }
+  }
+}
+
+.full-pg {
+  min-height: 100vh;
+}
+
+#hero {
+  h2 {
+    font-family: $font-heading;
+    font-size: 2.6rem;
+  }
+
+  .line {
+    background: $color-light;
+    height: 0.2px;
+    width: 18%;
+    border: none;
+  }
+}
+
+#about {
+  // background-color: $color-grey;
+
+  video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #aboutText {
+    background-color: $color-grey;
+  }
+
+  h3 {
+    color: $color-gold;
+    font-family: $font-heading;
+    font-size: 2.3em;
+  }
+
+  p {
+    font-size: 1.1em;
+    letter-spacing: 0.8px;
+  }
+}

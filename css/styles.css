@@ -3,8 +3,57 @@
 }
 
 body {
-  font-family: 'Catamaran', sans-serif;
+  font-family: "Catamaran", sans-serif;
   color: #ffffff;
+  line-height: 1.5;
+  background-color: #292826;
+  font-weight: 600;
+}
+
+.bg {
+  background-image: linear-gradient(rgba(41, 40, 38, 0.5), rgba(41, 40, 38, 0.5)), url("../img/pexels-james-frid-1098764.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+header #menu a {
+  letter-spacing: 0.8px;
+}
+
+.full-pg {
+  min-height: 100vh;
+}
+
+#hero h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.6rem;
+}
+#hero .line {
+  background: #ffffff;
+  height: 0.2px;
+  width: 18%;
+  border: none;
+}
+
+#about video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#about #aboutText {
+  background-color: #3b3a37;
+}
+#about h3 {
+  color: #fab405;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.3em;
+}
+#about p {
+  font-size: 1.1em;
+  letter-spacing: 0.8px;
 }
 
 /*# sourceMappingURL=styles.css.map */
