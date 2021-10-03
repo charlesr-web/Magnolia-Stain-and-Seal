@@ -4,25 +4,34 @@
   "description": "landing page for magnolia stain and seal",
   "main": "index.html",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run watch:all",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "lite": "lite-server",
     "watch:scss": "onchange \"css/*.scss\" --npm run scss",
     "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
-    "scss": "sass --update css/:css/",
-    "start": "npm run watch:all",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scss": "sass --watch css/:css/",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && about.html -d dist --htmlmin -o dist/about.html && contact.html -d dist --htmlmin -o dist/contact.html && gallery.html -d dist --htmlmin -o dist/gallery.html && services.html -d dist --htmlmin -o dist/services.html",
+    "clean": "rimraf dist"
   },
   "author": "Charles Rayner",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.5.2",
-    "jquery": "^3.5.1",
-    "onchange": "^7.0.0",
-    "parallelshell": "^3.0.1",
     "font-awesome": "^4.7.0",
-    "popper.js": "^1.16.1",
-    "sass": "^1.42.1"
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^7.0.0",
+    "lite-server": "^2.6.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.42.1",
+    "usemin-cli": "^0.6.0"
   }
 }
