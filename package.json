@@ -18,11 +18,11 @@
     "jquery": "^3.5.1",
     "onchange": "^7.0.0",
     "parallelshell": "^3.0.1",
-    "popper.js": "^1.16.1"
+    "font-awesome": "^4.7.0",
+    "popper.js": "^1.16.1",
+    "sass": "^1.42.1"
   },
   "devDependencies": {
-    "font-awesome": "^4.7.0",
-    "lite-server": "^2.6.1",
-    "sass": "^1.42.1"
+    "lite-server": "^2.6.1"
   }
 }
