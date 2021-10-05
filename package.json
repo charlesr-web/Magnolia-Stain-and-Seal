@@ -6,14 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run watch:all",
-    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run copyvideo && npm run usemin",
     "lite": "lite-server",
     "watch:scss": "onchange \"css/*.scss\" --npm run scss",
     "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
     "scss": "sass --watch css/:css/",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "copyvideo": "copyfiles -f video/* dist/video",
     "imagemin": "imagemin img/* -o dist/img",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && about.html -d dist --htmlmin -o dist/about.html && contact.html -d dist --htmlmin -o dist/contact.html && gallery.html -d dist --htmlmin -o dist/gallery.html && services.html -d dist --htmlmin -o dist/services.html",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
     "clean": "rimraf dist"
   },
   "author": "Charles Rayner",
