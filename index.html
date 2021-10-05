@@ -97,12 +97,6 @@
       rel="stylesheet"
     />
 
-    <!-- Font Awesome Kit -->
-    <script
-      src="https://kit.fontawesome.com/f01921c13b.js"
-      crossorigin="anonymous"
-    ></script>
-
     <title>Magnolia Stain & Seal</title>
   </head>
   <body>
@@ -112,7 +106,12 @@
       <header class="container-fluid sticky-top">
         <div class="row">
           <div class="col" id="logo">
-            <a href="index.html"><img src="img/small_logo.png" alt="logo" /></a>
+            <a href="index.html"
+              ><img
+                src="img/logo-no-bckgrd-white-txt.png"
+                alt="logo"
+                class="logo-img"
+            /></a>
           </div>
           <nav class="navbar navbar-expand-lg">
             <button
@@ -120,6 +119,7 @@
               type="button"
               data-toggle="collapse"
               data-target="#menu"
+              aria-label="menu button"
             >
               <i class="fas fa-bars text-white"></i>
             </button>
@@ -182,17 +182,32 @@
     </div>
 
     <!-- About Us -->
-    <!-- <section class="container-fluid" id="about">
-      <div class="row">
-        <div class="col-lg-7 mx-1" id="videoBox">
-          <video src="video/Escaping Squirrel.mp4" autoplay loop muted></video>
-        </div>
-        <div class="col-lg-5 pt-lg-5 pt-2 mx-3 test" id="aboutText">
-          <h3 class="pb-2">About Us</h3>
-          <p>We specialize in excellence!</p>
+    <section class="container-fluid" id="about">
+      <div class="container">
+        <div class="row py-3">
+          <div
+            class="col embed-responsive embed-responsive-16by9 m-5 drop-shadow"
+          >
+            <video
+              src="video/Escaping Squirrel.mp4"
+              class="embed-responsive-item"
+              autoplay
+              loop
+              muted
+            ></video>
+          </div>
         </div>
       </div>
-    </section> -->
+
+      <div class="container">
+        <div class="row px-5 mb-5">
+          <div class="col">
+            <h2 class="text-warning">About Us</h2>
+            <p class="pt-2">We specialize in excellence!</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Services -->
     <!-- <section class="container-fluid" id="services"></section> -->
@@ -214,6 +229,11 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <!-- Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/f01921c13b.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- endbuild -->
   </body>
 </html>
