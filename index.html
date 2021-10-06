@@ -97,6 +97,7 @@
       rel="stylesheet"
     />
 
+    <script src="node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
     <script
       src="https://kit.fontawesome.com/f01921c13b.js"
       crossorigin="anonymous"
@@ -107,7 +108,7 @@
     <!-- div so the background image can span the header and hero sections -->
     <div class="bg">
       <!-- Header -->
-      <header class="container-fluid sticky-top">
+      <header class="container-fluid sticky-top header">
         <div class="row">
           <div class="col" id="logo">
             <a href="index.html"
@@ -172,12 +173,12 @@
       >
         <div class="row">
           <div class="col">
-            <h2 class="mb-3">Welcome to Magnolia Stain & Seal</h2>
-            <hr class="line mt-0 mb-3" />
-            <p class="lead">
+            <h2 class="mb-3 welcome">Welcome to Magnolia Stain & Seal</h2>
+            <hr class="line mt-0 mb-3 welcome" />
+            <p class="lead welcome">
               Mid-South's Finest Fence and Deck Staining Professionals
             </p>
-            <button type="button" class="btn btn-lg btn-outline-light">
+            <button type="button" class="btn btn-lg btn-outline-light welcome">
               Request an Estimate
             </button>
           </div>
@@ -190,7 +191,13 @@
       <div class="container">
         <div class="row py-3">
           <div
-            class="col embed-responsive embed-responsive-16by9 m-5 drop-shadow"
+            class="
+              col
+              embed-responsive embed-responsive-16by9
+              mt-5
+              mb-4
+              drop-shadow
+            "
           >
             <video
               src="video/Escaping Squirrel.mp4"
@@ -204,7 +211,7 @@
       </div>
 
       <div class="container">
-        <div class="row px-5 mb-5">
+        <div class="row px-5 mb-4">
           <div class="col">
             <h2 class="text-warning">About Us</h2>
             <p class="pt-2">We specialize in excellence!</p>
@@ -214,7 +221,53 @@
     </section>
 
     <!-- Services -->
-    <!-- <section class="container-fluid" id="services"></section> -->
+    <section class="container-fluid" id="services">
+      <div class="row">
+        <h2 class="text-warning">Services</h2>
+      </div>
+      <div class="row">
+        <div class="col col-lg-6">
+          <div class="card w-75">
+            <img
+              src="./img/pexels-snapwire-113726 (1).jpg"
+              class="card-img-top"
+              alt="stained fence"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fence Staining</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-6">
+          <div class="card w-75">
+            <img
+              src="./img/pexels-snapwire-113726 (1).jpg"
+              class="card-img-top"
+              alt="stained deck"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Deck Staining</h5>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col col-lg-6">
+          <div class="card" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Pergola Staining</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-6">
+          <div class="card" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Patio Covers</h5>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
 
     <!-- Gallery -->
     <!-- <section class="container-fluid" id="gallery"></section> -->
@@ -233,6 +286,19 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+      ScrollReveal().reveal('.header', {
+        duration: 2000,
+        distance: '50px',
+        origin: 'bottom',
+      });
+
+      ScrollReveal().reveal('.welcome', {
+        duration: 2000,
+        distance: '50px',
+        origin: 'bottom',
+      });
+    </script>
     <!-- endbuild -->
   </body>
 </html>

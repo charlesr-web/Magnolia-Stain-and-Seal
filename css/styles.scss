@@ -31,15 +31,13 @@ body {
 }
 
 header {
-  .scroll-nav {
-    background-color: $color-dark;
-    opacity: 0.3;
-  }
+  // background-color: $color-grey;
 
   .logo-img {
     max-height: 6rem;
     max-width: 100%;
   }
+
   #menu {
     a {
       letter-spacing: 0.06em;
@@ -72,9 +70,14 @@ header {
 
   h2 {
     font-size: 2.4rem;
+    letter-spacing: 0.04em;
   }
 
   p {
     font-size: 1.125rem;
   }
+}
+
+#services {
+  background-color: $color-grey;
 }
