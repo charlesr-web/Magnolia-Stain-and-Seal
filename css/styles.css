@@ -10,6 +10,13 @@
   border: solid 2px blue;
 }
 
+html .sr {
+  visibility: hidden;
+}
+html .load-hidden {
+  visibility: hidden;
+}
+
 body {
   font-family: "Catamaran", sans-serif;
   color: #ffffff;

@@ -16,6 +16,16 @@ $color-card: rgb(72, 69, 67);
   border: solid 2px blue;
 }
 
+html {
+  .sr {
+    visibility: hidden;
+  }
+
+  .load-hidden {
+    visibility: hidden;
+  }
+}
+
 body {
   font-family: $font-body;
   color: $color-light;
@@ -38,8 +48,6 @@ body {
 }
 
 header {
-  // background-color: $color-grey;
-
   .logo-img {
     max-height: 6rem;
     max-width: 100%;
