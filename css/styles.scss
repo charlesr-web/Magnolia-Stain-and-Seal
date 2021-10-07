@@ -4,9 +4,16 @@ $color-gold: #fab405;
 $color-dark: #292826;
 $color-grey: #3b3a37;
 $color-light: #ffffff;
+$color-card: rgb(72, 69, 67);
 
 .test {
   border: solid 2px red;
+}
+.test2 {
+  border: solid 2px green;
+}
+.test3 {
+  border: solid 2px blue;
 }
 
 body {
@@ -69,8 +76,8 @@ header {
   }
 
   h2 {
+    font-family: $font-heading;
     font-size: 2.4rem;
-    letter-spacing: 0.04em;
   }
 
   p {
@@ -80,4 +87,23 @@ header {
 
 #services {
   background-color: $color-grey;
+
+  h2 {
+    font-family: $font-heading;
+    font-size: 2.4rem;
+  }
+
+  .drop-shadow {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04),
+      0 14px 18px -8px rgba(0, 0, 0, 0.11), 0 12px 12px -5px rgba(0, 0, 0, 0.09),
+      0 11px 8px 0 rgba(0, 0, 0, 0.03) !important;
+  }
+
+  .card-bg {
+    background-color: $color-card;
+  }
+
+  h3 {
+    font-family: $font-heading;
+  }
 }

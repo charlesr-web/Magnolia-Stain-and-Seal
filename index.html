@@ -6,79 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="img/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="img/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="img/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="img/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="img/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="img/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="img/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="img/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="img/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="img/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon-16x16.png"
-    />
-    <link rel="manifest" href="img/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
 
     <!-- Stylesheets -->
     <!-- build:css css/main.css -->
@@ -97,7 +24,34 @@
       rel="stylesheet"
     />
 
-    <script src="node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/img/site.webmanifest" />
+    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="/img/browserconfig.xml" />
+    <meta name="theme-color" content="#f2f2f2" />
+
+    <!-- <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: true });
+    </script> -->
     <script
       src="https://kit.fontawesome.com/f01921c13b.js"
       crossorigin="anonymous"
@@ -108,7 +62,7 @@
     <!-- div so the background image can span the header and hero sections -->
     <div class="bg">
       <!-- Header -->
-      <header class="container-fluid sticky-top header">
+      <header class="container-fluid fixed-top header">
         <div class="row">
           <div class="col" id="logo">
             <a href="index.html"
@@ -187,7 +141,7 @@
     </div>
 
     <!-- About Us -->
-    <section class="container-fluid" id="about">
+    <section class="container-fluid p-5" id="about">
       <div class="container">
         <div class="row py-3">
           <div
@@ -205,13 +159,14 @@
               autoplay
               loop
               muted
+              controls
             ></video>
           </div>
         </div>
       </div>
 
       <div class="container">
-        <div class="row px-5 mb-4">
+        <div class="row mb-4">
           <div class="col">
             <h2 class="text-warning">About Us</h2>
             <p class="pt-2">We specialize in excellence!</p>
@@ -221,51 +176,66 @@
     </section>
 
     <!-- Services -->
-    <section class="container-fluid" id="services">
-      <div class="row">
-        <h2 class="text-warning">Services</h2>
+    <section class="container-fluid py-5" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-warning mb-5">Services</h2>
+          </div>
+        </div>
       </div>
-      <div class="row">
-        <div class="col col-lg-6">
-          <div class="card w-75">
-            <img
-              src="./img/pexels-snapwire-113726 (1).jpg"
-              class="card-img-top"
-              alt="stained fence"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Fence Staining</h5>
+
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col mb-5">
+            <div class="card border-0 rounded-0 card-bg drop-shadow">
+              <img
+                src="./img/pexels-snapwire-113726 (1).jpg"
+                class="card-img-top"
+                alt="fence staining"
+              />
+              <div class="card-body pt-4">
+                <h3 class="card-title">Fence Staining</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card border-0 rounded-0 card-bg drop-shadow">
+              <img
+                src="./img/khara-woods-B4HszZLE5-g-unsplash.jpg"
+                class="card-img-top"
+                alt="deck staining"
+              />
+              <div class="card-body pt-4">
+                <h3 class="card-title">Deck Staining</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card border-0 rounded-0 card-bg drop-shadow">
+              <img
+                src="./img/pexels-snapwire-113726 (1).jpg"
+                class="card-img-top"
+                alt="pergola staining"
+              />
+              <div class="card-body pt-4">
+                <h3 class="card-title">Pergola Staining</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card border-0 rounded-0 card-bg drop-shadow">
+              <img
+                src="./img/pexels-snapwire-113726 (1).jpg"
+                class="card-img-top"
+                alt="patio covers"
+              />
+              <div class="card-body pt-4">
+                <h3 class="card-title">Patio Covers</h3>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col col-lg-6">
-          <div class="card w-75">
-            <img
-              src="./img/pexels-snapwire-113726 (1).jpg"
-              class="card-img-top"
-              alt="stained deck"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Deck Staining</h5>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="col col-lg-6">
-          <div class="card" style="width: 18rem">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Pergola Staining</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col col-lg-6">
-          <div class="card" style="width: 18rem">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Patio Covers</h5>
-            </div>
-          </div>
-        </div> -->
       </div>
     </section>
 
@@ -286,7 +256,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script>
+    <!-- <script>
       ScrollReveal().reveal('.header', {
         duration: 2000,
         distance: '50px',
@@ -298,7 +268,7 @@
         distance: '50px',
         origin: 'bottom',
       });
-    </script>
+    </script> -->
     <!-- endbuild -->
   </body>
 </html>
