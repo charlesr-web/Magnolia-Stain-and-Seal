@@ -50,7 +50,7 @@
 
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script>
-      ScrollReveal({ duration: 700 });
+      ScrollReveal({ duration: 900 });
     </script>
     <script
       src="https://kit.fontawesome.com/f01921c13b.js"
@@ -62,7 +62,10 @@
     <!-- div so the background image can span the header and hero sections -->
     <div class="bg">
       <!-- Header -->
-      <header class="container-fluid fixed-top header load-hidden">
+      <header
+        class="container-fluid fixed-top bottom-up load-hidden"
+        id="header"
+      >
         <div class="row">
           <div class="col" id="logo">
             <a href="index.html"
@@ -72,9 +75,10 @@
                 class="logo-img"
             /></a>
           </div>
+
           <nav class="navbar navbar-expand-lg">
             <button
-              class="navbar-toggler order-2 order-lg-1"
+              class="navbar-toggler"
               type="button"
               data-toggle="collapse"
               data-target="#menu"
@@ -97,18 +101,14 @@
                 <li class="nav-item">
                   <a class="nav-link text-white mx-2" href="#">Contact</a>
                 </li>
+                <a href="tel:662-372-0848">
+                  <button class="btn btn-warning my-2 my-sm-0" type="button">
+                    <i class="fas fa-phone-alt"></i>
+                    Call
+                  </button>
+                </a>
               </ul>
             </div>
-
-            <a href="tel:662-372-0848">
-              <button
-                class="btn btn-warning my-2 my-sm-0 order-1 order-lg-2"
-                type="button"
-              >
-                <i class="fas fa-phone-alt"></i>
-                Call
-              </button>
-            </a>
           </nav>
         </div>
       </header>
@@ -122,7 +122,7 @@
           d-flex
           align-items-center
           justify-content-center
-          welcome
+          bottom-up
           load-hidden
         "
         id="hero"
@@ -143,8 +143,8 @@
     </div>
 
     <!-- About Us -->
-    <section class="container-fluid p-5" id="about">
-      <div class="container video">
+    <section class="container-fluid px-3 py-5" id="about">
+      <div class="container bottom-up">
         <div class="row py-3">
           <div
             class="
@@ -167,7 +167,7 @@
         </div>
       </div>
 
-      <div class="container video">
+      <div class="container bottom-up">
         <div class="row mb-4">
           <div class="col">
             <h2 class="text-warning">About Us</h2>
@@ -179,7 +179,7 @@
 
     <!-- Services -->
     <section class="container-fluid py-5" id="services">
-      <div class="container">
+      <div class="container bottom-up">
         <div class="row">
           <div class="col">
             <h2 class="text-warning mb-5">Services</h2>
@@ -189,7 +189,7 @@
 
       <div class="container">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col mb-5">
+          <div class="col mb-5 left-in">
             <div class="card border-0 rounded-0 card-bg drop-shadow">
               <img
                 src="./img/pexels-snapwire-113726 (1).jpg"
@@ -201,7 +201,8 @@
               </div>
             </div>
           </div>
-          <div class="col mb-5">
+
+          <div class="col mb-5 right-in">
             <div class="card border-0 rounded-0 card-bg drop-shadow">
               <img
                 src="./img/khara-woods-B4HszZLE5-g-unsplash.jpg"
@@ -213,7 +214,8 @@
               </div>
             </div>
           </div>
-          <div class="col mb-5">
+
+          <div class="col mb-5 left-in">
             <div class="card border-0 rounded-0 card-bg drop-shadow">
               <img
                 src="./img/pexels-snapwire-113726 (1).jpg"
@@ -225,7 +227,8 @@
               </div>
             </div>
           </div>
-          <div class="col mb-5">
+
+          <div class="col mb-5 right-in">
             <div class="card border-0 rounded-0 card-bg drop-shadow">
               <img
                 src="./img/pexels-snapwire-113726 (1).jpg"
@@ -258,25 +261,25 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <!-- endbuild -->
     <script>
-      ScrollReveal().reveal('.header', {
+      ScrollReveal().reveal('.bottom-up', {
         origin: 'bottom',
-        distance: '60px',
+        distance: '90px',
         easing: 'ease-in-out',
       });
 
-      ScrollReveal().reveal('.welcome', {
-        origin: 'bottom',
-        distance: '60px',
+      ScrollReveal().reveal('.left-in', {
+        origin: 'left',
+        distance: '90px',
         easing: 'ease-in-out',
       });
 
-      ScrollReveal().reveal('.video', {
-        origin: 'bottom',
-        distance: '60px',
+      ScrollReveal().reveal('.right-in', {
+        origin: 'right',
+        distance: '90px',
         easing: 'ease-in-out',
       });
     </script>
-    <!-- endbuild -->
   </body>
 </html>
