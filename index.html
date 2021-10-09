@@ -50,7 +50,7 @@
 
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script>
-      ScrollReveal({ duration: 900 });
+      ScrollReveal({ duration: 700 });
     </script>
     <script
       src="https://kit.fontawesome.com/f01921c13b.js"
@@ -67,33 +67,31 @@
         id="header"
       >
         <div class="row">
-          <div class="col" id="logo">
+          <nav class="navbar navbar-expand-lg fixed-top">
             <a href="index.html"
               ><img
                 src="img/logo-no-bckgrd-white-txt.png"
                 alt="logo"
                 class="logo-img"
+                height="75"
             /></a>
-          </div>
-
-          <nav class="navbar navbar-expand-lg">
             <button
               class="navbar-toggler"
               type="button"
-              data-toggle="collapse"
-              data-target="#menu"
-              aria-label="menu button"
+              data-toggle="offcanvas"
             >
-              <i class="fas fa-bars text-white"></i>
+              <i class="fas fa-lg fa-bars text-white"></i>
             </button>
 
-            <div class="collapse navbar-collapse text-right" id="menu">
-              <ul class="navbar-nav mr-2">
+            <div class="navbar-collapse offcanvas-collapse" id="menu">
+              <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link text-white mx-2" href="#">About</a>
+                  <a class="nav-link text-white mx-2" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white mx-2" href="#">Services</a>
+                  <a class="nav-link text-white mx-2" href="#services"
+                    >Services</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-white mx-2" href="#">Gallery</a>
@@ -101,13 +99,14 @@
                 <li class="nav-item">
                   <a class="nav-link text-white mx-2" href="#">Contact</a>
                 </li>
-                <a href="tel:662-372-0848">
-                  <button class="btn btn-warning my-2 my-sm-0" type="button">
-                    <i class="fas fa-phone-alt"></i>
-                    Call
-                  </button>
-                </a>
               </ul>
+
+              <a href="tel:662-372-0848">
+                <button class="btn btn-warning ml-lg-3" type="button">
+                  <i class="fas fa-phone-alt mr-2"></i>
+                  Call
+                </button>
+              </a>
             </div>
           </nav>
         </div>
@@ -134,9 +133,11 @@
             <p class="lead">
               Mid-South's Finest Fence and Deck Staining Professionals
             </p>
-            <button type="button" class="btn btn-lg btn-outline-light">
-              Request an Estimate
-            </button>
+            <a href="tel:662-372-0848">
+              <button type="button" class="btn btn-lg btn-warning">
+                Request An Estimate
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -202,7 +203,7 @@
             </div>
           </div>
 
-          <div class="col mb-5 right-in">
+          <div class="col mb-5 left-in">
             <div class="card border-0 rounded-0 card-bg drop-shadow">
               <img
                 src="./img/khara-woods-B4HszZLE5-g-unsplash.jpg"
@@ -228,7 +229,7 @@
             </div>
           </div>
 
-          <div class="col mb-5 right-in">
+          <div class="col mb-5 left-in">
             <div class="card border-0 rounded-0 card-bg drop-shadow">
               <img
                 src="./img/pexels-snapwire-113726 (1).jpg"
@@ -271,12 +272,6 @@
 
       ScrollReveal().reveal('.left-in', {
         origin: 'left',
-        distance: '90px',
-        easing: 'ease-in-out',
-      });
-
-      ScrollReveal().reveal('.right-in', {
-        origin: 'right',
         distance: '90px',
         easing: 'ease-in-out',
       });
