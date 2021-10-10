@@ -255,3 +255,27 @@ header {
     }
   }
 }
+
+#hours {
+  background-color: $color-grey;
+
+  h2 {
+    font-family: $font-heading;
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-size: 1.16rem;
+  }
+
+  .line {
+    background: rgba(255, 255, 255, 0.3);
+    height: 0.2px;
+    width: 18%;
+    border: none;
+  }
+
+  .open-color {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}

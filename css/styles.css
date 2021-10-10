@@ -205,4 +205,24 @@ header #menu a {
   background-color: #555;
 }
 
+#hours {
+  background-color: #3b3a37;
+}
+#hours h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+}
+#hours p {
+  font-size: 1.16rem;
+}
+#hours .line {
+  background: rgba(255, 255, 255, 0.3);
+  height: 0.2px;
+  width: 18%;
+  border: none;
+}
+#hours .open-color {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 /*# sourceMappingURL=styles.css.map */
