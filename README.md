@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/87c58e32-27be-496f-9ca9-7127fe8a70fd/deploy-status)](https://app.netlify.com/sites/magnoliastain/deploys)
+
 # Magnolia Stain and Seal
 
 This is a simple landing page for a local fence staining company.
