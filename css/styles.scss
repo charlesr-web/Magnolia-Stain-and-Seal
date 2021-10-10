@@ -71,6 +71,7 @@ header {
     a {
       letter-spacing: 0.06em;
       font-size: 1.16rem;
+      text-decoration: none;
     }
   }
 
@@ -271,11 +272,38 @@ header {
   .line {
     background: rgba(255, 255, 255, 0.3);
     height: 0.2px;
-    width: 18%;
+    width: 30%;
     border: none;
   }
 
   .open-color {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+#footer {
+  h2 {
+    font-family: $font-heading;
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-size: 1.16rem;
+  }
+
+  .line {
+    background: rgba(255, 255, 255, 0.1);
+    height: 0.2px;
+    width: 100%;
+    border: none;
+  }
+
+  .open-color {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  a {
+    text-decoration: underline;
     color: rgba(255, 255, 255, 0.8);
   }
 }

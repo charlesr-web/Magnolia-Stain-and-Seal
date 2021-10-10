@@ -54,6 +54,7 @@ header .logo-img {
 header #menu a {
   letter-spacing: 0.06em;
   font-size: 1.16rem;
+  text-decoration: none;
 }
 @media (max-width: 991.98px) {
   header .offcanvas-collapse {
@@ -218,10 +219,31 @@ header #menu a {
 #hours .line {
   background: rgba(255, 255, 255, 0.3);
   height: 0.2px;
-  width: 18%;
+  width: 30%;
   border: none;
 }
 #hours .open-color {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#footer h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+}
+#footer p {
+  font-size: 1.16rem;
+}
+#footer .line {
+  background: rgba(255, 255, 255, 0.1);
+  height: 0.2px;
+  width: 100%;
+  border: none;
+}
+#footer .open-color {
+  color: rgba(255, 255, 255, 0.8);
+}
+#footer a {
+  text-decoration: underline;
   color: rgba(255, 255, 255, 0.8);
 }
 
