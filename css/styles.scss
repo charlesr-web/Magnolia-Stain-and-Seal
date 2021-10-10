@@ -5,6 +5,8 @@ $color-dark: #292826;
 $color-grey: #3b3a37;
 $color-light: #ffffff;
 $color-card: rgb(72, 69, 67);
+$maxWidth: 960px;
+$minTablet: 767px;
 
 .test {
   border: solid 2px red;
@@ -24,6 +26,8 @@ html {
   .load-hidden {
     visibility: hidden;
   }
+
+  scroll-behavior: smooth;
 }
 
 html,
@@ -37,6 +41,7 @@ body {
   line-height: 1.5;
   background-color: $color-dark;
   font-weight: normal;
+  position: relative;
 }
 
 .bg {
@@ -53,6 +58,10 @@ body {
 }
 
 header {
+  nav {
+    background-color: rgba(41, 40, 38, 0.8);
+  }
+
   .logo-img {
     max-height: 6rem;
     max-width: 100%;
@@ -62,6 +71,32 @@ header {
     a {
       letter-spacing: 0.06em;
       font-size: 1.16rem;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .offcanvas-collapse {
+      position: fixed;
+      top: 90px; /* Height of navbar */
+      bottom: 0;
+      left: 100%;
+      width: 25%;
+      background-color: rgba(41, 40, 38, 0.8);
+      padding-right: 1rem;
+      padding-left: 1rem;
+      text-align: right;
+      overflow-y: auto;
+      visibility: hidden;
+      transition: visibility 0.2s ease-in-out,
+        -webkit-transform 0.2s ease-in-out;
+      transition: transform 0.2s ease-in-out, visibility 0.2s ease-in-out;
+      transition: transform 0.2s ease-in-out, visibility 0.2s ease-in-out,
+        -webkit-transform 0.2s ease-in-out;
+    }
+    .offcanvas-collapse.open {
+      visibility: visible;
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
     }
   }
 }
@@ -122,27 +157,101 @@ header {
   }
 }
 
-@media (max-width: 991.98px) {
-  .offcanvas-collapse {
-    position: fixed;
-    top: 75px; /* Height of navbar */
-    bottom: 0;
-    left: 100%;
-    width: 25%;
-    // background-color: $color-dark;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    text-align: right;
-    overflow-y: auto;
-    visibility: hidden;
-    transition: visibility 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
-    transition: transform 0.1s ease-in-out, visibility 0.1s ease-in-out;
-    transition: transform 0.1s ease-in-out, visibility 0.1s ease-in-out,
-      -webkit-transform 0.1s ease-in-out;
+#our-work {
+  h2 {
+    font-family: $font-heading;
+    font-size: 2.4rem;
   }
-  .offcanvas-collapse.open {
-    visibility: visible;
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+
+  @mixin media($size) {
+    @if $size == 'tabletUpwards' {
+      @media screen and (min-width: $minTablet) {
+        @content;
+      }
+    }
+  }
+
+  .drop-shadow {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  .comparison-slider-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+
+    .comparison-slider {
+      position: relative;
+      width: 100%;
+      margin: 0;
+      box-sizing: border-box;
+      > img {
+        width: 100%;
+        display: block;
+      }
+
+      .resize {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        overflow: hidden;
+        > img {
+          display: block;
+        }
+      }
+
+      .divider {
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background-color: rgba(256, 256, 256, 0.2);
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        margin-left: -1px;
+        cursor: ew-resize;
+        &:before {
+          content: '';
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          left: -9px;
+          top: 50%;
+          margin-top: -10px;
+          background-color: white;
+          transform: rotate(45deg);
+          transition: all 0.1s ease-in-out;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          left: -5px;
+          top: 50%;
+          margin-top: -6px;
+          background-color: white;
+          transform: rotate(45deg);
+          transition: all 0.1s ease-in-out;
+        }
+        &.draggable {
+          &:before {
+            width: 30px;
+            height: 30px;
+            left: -14px;
+            margin-top: -15px;
+          }
+          &:after {
+            width: 20px;
+            height: 20px;
+            left: -9px;
+            margin-top: -10px;
+            background-color: #555;
+          }
+        }
+      }
+    }
   }
 }
