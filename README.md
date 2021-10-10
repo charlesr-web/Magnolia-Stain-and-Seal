@@ -14,4 +14,4 @@ Built with Bootstrap 4, SASS, and a little bit of jQuery
 
 Check out the live site here:
 
-[Magnolia Stain](magnoliastain.com)
+[Magnolia Stain](http://magnoliastain.com)
